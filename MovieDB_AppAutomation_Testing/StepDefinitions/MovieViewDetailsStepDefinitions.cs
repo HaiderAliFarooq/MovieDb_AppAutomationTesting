@@ -27,11 +27,11 @@ namespace MovieDB_AppAutomation_Testing.StepDefinitions
         }
 
         [When(@"I search for a movie whose name starts with ""([^""]*)""")]
-        public void WhenISearchForAMovieWhoseNameStartsWith(string news)
+        public void WhenISearchForAMovieWhoseNameStartsWith(string movieName)
         {
             var search_bar = _locators.SearchBar;
             search_bar.Click();
-            search_bar.SendKeys(news);
+            search_bar.SendKeys(movieName);
         }
 
         [When(@"I select the second option from the result list of movies in search box")]

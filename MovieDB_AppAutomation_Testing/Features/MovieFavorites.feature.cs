@@ -20,22 +20,22 @@ namespace MovieDB_AppAutomation_Testing.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("MovieViewDetails")]
-    public partial class MovieViewDetailsFeature
+    [NUnit.Framework.DescriptionAttribute("MovieFavoritesScreen")]
+    public partial class MovieFavoritesScreenFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "MovieViewDetails.feature"
+#line 1 "MovieFavorites.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "MovieViewDetails", "Searching for a movie from the main screen using search and then navigating to it" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "MovieFavoritesScreen", "Searching for a movie from the main screen using search and then navigating to it" +
                     "s details page.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -75,14 +75,16 @@ namespace MovieDB_AppAutomation_Testing.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("View Details of a Movie under search")]
-        [NUnit.Framework.CategoryAttribute("movieDetails")]
-        public void ViewDetailsOfAMovieUnderSearch()
+        [NUnit.Framework.DescriptionAttribute("Verify the favorites feature is working properly by navigating to the favorites s" +
+            "creen")]
+        [NUnit.Framework.CategoryAttribute("movieFavoritesScreen")]
+        public void VerifyTheFavoritesFeatureIsWorkingProperlyByNavigatingToTheFavoritesScreen()
         {
             string[] tagsOfScenario = new string[] {
-                    "movieDetails"};
+                    "movieFavoritesScreen"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View Details of a Movie under search", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the favorites feature is working properly by navigating to the favorites s" +
+                    "creen", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -93,20 +95,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
- testRunner.Given("I am on the main movies list screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 8
- testRunner.When("I search for a movie whose name starts with \"News\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I open the details page of a movie like \"Morbius\" and mark the movie as favorite", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.And("I select the second option from the result list of movies in search box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I navigate to favorites screen via menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
- testRunner.And("I tap the Show details link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 11
- testRunner.Then("I should see the overview of the movie on details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see the movie \"Morbius\" listed on the Favorites screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

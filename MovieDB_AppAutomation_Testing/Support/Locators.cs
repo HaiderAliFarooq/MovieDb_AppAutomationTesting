@@ -25,5 +25,17 @@ namespace MovieDB_AppAutomation_Testing.Support
         public IWebElement ShowDetails => _driver.FindElementById("com.insiderser.android.movies:id/show_details");
         
         public IWebElement DetailsOverview => _driver.FindElementById("com.insiderser.android.movies:id/overview");
+
+        public IWebElement FavoritesStar => _driver.FindElementById("com.insiderser.android.movies:id/favourite_star");
+
+        public IWebElement BackScreenArrow => _driver.FindElementByXPath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+
+        public IWebElement ThreeDotMenu => _driver.FindElementById("com.insiderser.android.movies:id/left_action");
+
+        public ReadOnlyCollection<AppiumWebElement> menuFav => _driver.FindElementsByClassName("android.widget.CheckedTextView");
+        
+        public ReadOnlyCollection<AppiumWebElement> favMovies => _driver.FindElementsById("com.insiderser.android.movies:id/image");
+        
+        public IWebElement detailPage => _driver.FindElementById("com.insiderser.android.movies:id/title");
     }
 }

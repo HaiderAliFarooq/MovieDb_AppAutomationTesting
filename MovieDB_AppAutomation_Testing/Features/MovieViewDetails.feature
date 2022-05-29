@@ -2,7 +2,7 @@
 
 Searching for a movie from the main screen using search and then navigating to its details page.
 
-@tag1
+@movieDetails
 Scenario: View Details of a Movie under search
 	Given I am on the main movies list screen
 	When I search for a movie whose name starts with "News"
