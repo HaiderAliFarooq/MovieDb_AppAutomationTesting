@@ -2,8 +2,6 @@ using MovieDB_AppAutomation_Testing.Support;
 using NUnit.Framework;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
-using System;
-using TechTalk.SpecFlow;
 
 namespace MovieDB_AppAutomation_Testing.StepDefinitions
 {

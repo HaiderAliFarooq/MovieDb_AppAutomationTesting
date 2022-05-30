@@ -95,6 +95,9 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 7
+ testRunner.Given("I am on the main movies list screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 8
  testRunner.When("I open the details page of a movie like \"Morbius\" and mark the movie as favorite", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
