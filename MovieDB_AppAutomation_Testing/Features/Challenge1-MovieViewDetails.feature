@@ -3,7 +3,7 @@
 Searching for a movie from the main screen using search and then navigating to its details page.
 
 @movieDetails
-Scenario: View Details of a Movie under search
+Scenario: View Details of a Movie
 	Given I am on the main movies list screen
 	When I search for a movie whose name starts with "News"
 	And I select the second option from the result list of movies in search box

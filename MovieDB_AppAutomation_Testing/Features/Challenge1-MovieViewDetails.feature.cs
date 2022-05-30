@@ -28,7 +28,7 @@ namespace MovieDB_AppAutomation_Testing.Features
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "MovieViewDetails.feature"
+#line 1 "Challenge1-MovieViewDetails.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -75,14 +75,14 @@ namespace MovieDB_AppAutomation_Testing.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("View Details of a Movie under search")]
+        [NUnit.Framework.DescriptionAttribute("View Details of a Movie")]
         [NUnit.Framework.CategoryAttribute("movieDetails")]
-        public void ViewDetailsOfAMovieUnderSearch()
+        public void ViewDetailsOfAMovie()
         {
             string[] tagsOfScenario = new string[] {
                     "movieDetails"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View Details of a Movie under search", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View Details of a Movie", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

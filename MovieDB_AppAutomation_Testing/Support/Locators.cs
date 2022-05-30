@@ -27,10 +27,10 @@ namespace MovieDB_AppAutomation_Testing.Support
 
         public IWebElement ThreeDotMenu => _driver.FindElementById("com.insiderser.android.movies:id/left_action");
 
-        public ReadOnlyCollection<AppiumWebElement> menuFav => _driver.FindElementsByClassName("android.widget.CheckedTextView");
+        public ReadOnlyCollection<AppiumWebElement> MenuFav => _driver.FindElementsByClassName("android.widget.CheckedTextView");
         
-        public ReadOnlyCollection<AppiumWebElement> favMovies => _driver.FindElementsById("com.insiderser.android.movies:id/image");
+        public ReadOnlyCollection<AppiumWebElement> FavMovies => _driver.FindElementsById("com.insiderser.android.movies:id/image");
         
-        public IWebElement detailPage => _driver.FindElementById("com.insiderser.android.movies:id/title");
+        public IWebElement DetailPage => _driver.FindElementById("com.insiderser.android.movies:id/title");
     }
 }

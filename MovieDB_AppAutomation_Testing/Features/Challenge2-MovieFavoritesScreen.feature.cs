@@ -28,7 +28,7 @@ namespace MovieDB_AppAutomation_Testing.Features
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "MovieFavorites.feature"
+#line 1 "Challenge2-MovieFavoritesScreen.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]

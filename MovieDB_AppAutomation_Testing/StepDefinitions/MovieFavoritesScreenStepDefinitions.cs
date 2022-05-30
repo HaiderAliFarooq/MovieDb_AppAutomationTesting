@@ -33,16 +33,16 @@ namespace MovieDB_AppAutomation_Testing.StepDefinitions
         public void WhenINavigateToFavoritesScreenViaMenu()
         {
             _locators.ThreeDotMenu.Click();
-            var menuItems = _locators.menuFav;
+            var menuItems = _locators.MenuFav;
             menuItems[3].Click();
         }
 
         [Then(@"I should see the movie ""([^""]*)"" listed on the Favorites screen")]
         public void ThenIShouldSeeTheMovieListedOnTheFavoritesScreen(string movieName)
         {
-            var listFavMovies =_locators.favMovies;
+            var listFavMovies =_locators.FavMovies;
             listFavMovies[0].Click();
-            Assert.True(_locators.detailPage.Text == movieName);
+            Assert.True(_locators.DetailPage.Text == movieName);
             //Clean: remove the favourite movie to make the testcase reuseable
             _locators.FavoritesStar.Click();
         }
