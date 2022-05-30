@@ -22,4 +22,4 @@ Below are the UI feature files:
 - TV Shows screen.feature
 
 ## Challenge Question No. 4 - Network tests
-- Network Task.zip
+- Network Task.zip (The network traffic is captured through Fiddler)
